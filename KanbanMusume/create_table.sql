@@ -38,7 +38,7 @@ create table girls(
   id SERIAL,
   name VARCHAR(30) NOT NULL,
   code VARCHAR(10) NOT NULL,
-  desc VARCHAR(100),
+  detail VARCHAR(100),
   birthday DATE NOT NULL,
   PRIMARY KEY(id)
 );
