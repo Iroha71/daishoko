@@ -1,6 +1,7 @@
 drop table tasks;
 drop table categories;
 drop table users;
+drop table girls;
 
 create table users(
   id SERIAL,
@@ -31,4 +32,13 @@ create table tasks(
   PRIMARY KEY(id),
   FOREIGN KEY(user_id) REFERENCES users(id),
   FOREIGN KEY(category_id) REFERENCES categories(id)
+);
+
+create table girls(
+  id SERIAL,
+  name VARCHAR(30) NOT NULL,
+  code VARCHAR(10) NOT NULL,
+  desc VARCHAR(100),
+  birthday DATE NOT NULL,
+  PRIMARY KEY(id)
 );
