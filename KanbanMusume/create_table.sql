@@ -18,9 +18,8 @@ create table users(
   name VARCHAR(30) NOT NULL,
   nickname VARCHAR(10) NOT NULL,
   password VARCHAR(30) NOT NULL,
-  cur_girl_id INT,
-  PRIMARY KEY(id),
-  FOREIGN KEY(cur_girl_id) REFERENCES girls(id)
+  coin INT DEFAULT 0,
+  PRIMARY KEY(id)
 );
 
 create table categories(
