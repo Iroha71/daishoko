@@ -19,6 +19,7 @@ create table users(
   nickname VARCHAR(10) NOT NULL,
   password VARCHAR(30) NOT NULL,
   coin INT DEFAULT 0,
+  line_id VARCHAR(50),
   PRIMARY KEY(id)
 );
 
